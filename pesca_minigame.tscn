@@ -1,6 +1,6 @@
-[gd_scene load_steps=2 format=3 uid="uid://bmijs7k3m21bp"]
+[gd_scene load_steps=2 format=3 uid="uid://dh8xco52e30hy"]
 
-[ext_resource type="Script" uid="uid://dbkjku8a35ka" path="res://pesca_minigame.gd" id="1_v17pf"]
+[ext_resource type="Script" uid="uid://ybgobhxgisia" path="res://pesca_minigame.gd" id="1_v17pf"]
 
 [node name="pesca-minigame" type="Node2D"]
 script = ExtResource("1_v17pf")
@@ -10,12 +10,14 @@ offset_right = 193.0
 offset_bottom = 17.0
 
 [node name="peixe" type="ColorRect" parent="back"]
+layout_mode = 0
 offset_left = 169.0
 offset_right = 193.0
 offset_bottom = 17.0
 color = Color(0.100438, 0.669271, 7.70092e-07, 1)
 
 [node name="player" type="ColorRect" parent="back"]
+layout_mode = 0
 offset_right = 9.0
 offset_bottom = 17.0
 color = Color(0, 0, 0, 1)

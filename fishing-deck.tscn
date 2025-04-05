@@ -2,7 +2,7 @@
 
 [ext_resource type="Texture2D" uid="uid://bb4xef3vnb0g5" path="res://Fishing Game Pack/background.png" id="1_o4721"]
 [ext_resource type="PackedScene" uid="uid://ctrv0otxvu8sp" path="res://cenas/pescador.tscn" id="2_rf4cs"]
-[ext_resource type="PackedScene" uid="uid://bmijs7k3m21bp" path="res://pesca_minigame.tscn" id="3_c8hrg"]
+[ext_resource type="PackedScene" uid="uid://dh8xco52e30hy" path="res://pesca_minigame.tscn" id="3_c8hrg"]
 
 [node name="Node2D" type="Node2D"]
 

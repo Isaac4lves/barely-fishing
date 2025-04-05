@@ -3,7 +3,7 @@ extends Node2D
 @onready var back: ColorRect = $back
 @onready var peixe: ColorRect = $back/peixe
 @onready var player: ColorRect = $back/player
-@onready var peixes_label: Label = $"../quantidade_peixe" 
+@onready var peixes_label: Label = $"../quantidade_peixe"
 
 var speed: float = 200.0
 var ativo := false
@@ -20,12 +20,11 @@ func _process(delta):
 	new_x = clamp(new_x, 0, back.size.x - player.size.x)
 	player.position.x = new_x
 
-
 func _incrementar_peixes():
 	var texto = peixes_label.text
 	var numero = int(texto.strip_edges())
 	numero += 1
-	peixes_label.text = str(numero) 
+	peixes_label.text = str(numero)
 
 func _input(event):
 	if not ativo:
@@ -37,7 +36,6 @@ func _input(event):
 			_incrementar_peixes()
 		else:
 			print("Falhou a pesca!")
-		# Finaliza minigame e chama callback
 		ativo = false
 		visible = false
 		if callback:
